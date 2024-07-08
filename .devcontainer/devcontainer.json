@@ -1,0 +1,44 @@
+{
+    "name": "Rust Dev Container",
+    "image": "mcr.microsoft.com/devcontainers/rust:0-1-bullseye",
+    "settings": {
+      "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "customizations": {
+    "extensions": [
+      "rust-lang.rust",
+      "ms-vscode.cpptools",
+      "vadimcn.vscode-lldb",
+      "serayuzgur.crates",
+      "bungcip.better-toml",
+      "yib.rust-bundle",
+      "davidanson.vscode-markdownlint",
+      "dbaeumer.vscode-eslint",
+      "github.vscode-github-actions",
+      "kevinrose.vsc-python-indent",
+      "mechatroner.rainbow-csv",
+      "mgesbert.python-path",
+      "mhutchie.git-graph",
+      "mike-co.import-sorter",
+      "mikestead.dotenv",
+      "ms-python.debugpy",
+      "ms-python.isort",
+      "ms-python.pylint",
+      "ms-python.python",
+      "zerotaskx.rust-extension-pack",
+      "zhangyue.rust-mod-generator"
+    ]},
+    "postCreateCommand": "cargo install cargo-edit",
+    "postStartCommand": "echo 'Development container is ready!'",
+    "mounts": [
+      "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"
+    ],
+    "remoteUser": "vscode",
+    "containerEnv": {
+      "RUST_LOG": "debug"
+    },
+    "features": {
+      "ghcr.io/devcontainers/features/rust:1": {}
+    }
+  }
+  

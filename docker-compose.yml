@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  data_processing:
+    build:
+      context: .
+      dockerfile: ./A3DS/data_pipeline/Dockerfile.data_processing
+    volumes:
+      - ./data:/data
+    networks:
+      - app-network
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile.app
+    volumes:
+      - ./app:/app
+    depends_on:
+      - data_processing
+    networks:
+      - app-network
+    environment:
+      - DATA_PROCESSING_URL=http://data_processing:8080
+
+networks:
+  app-network:
+    driver: bridge

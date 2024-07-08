@@ -20,6 +20,7 @@ requests = "^2.32.3"
 sendgrid = "^6.11.0"
 pywhatkit = "^5.4"
 python-dotenv = "^1.0.1"
+typedb-client = "^2.18.2"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.2.2"
