@@ -1,6 +1,8 @@
 # A3DS
 Adversarial Detection System
 
+![Orion Hunts](image-1.png)
+
 A3DS is an early stage project designed to be robust and scalable providing detection technologies for adversarial activity. 
 
 ### Technology
@@ -19,7 +21,7 @@ A3DS is an early stage project designed to be robust and scalable providing dete
 1. Python
 2. SkLearn
 3. Rust for data transmission and distribution
-4. NEAR Blockchain
+
 
 ### Contact
 **core@defensiveai.com**
