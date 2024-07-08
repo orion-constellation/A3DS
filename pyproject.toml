@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "a3ds"
+version = "0.1.0"
+description = "Advanced Adversarial Activity Detection"
+authors = ["orionhunts-ai <orion@oriondefensiveai.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pcap2http = "^1.1"
+pcap-analysis = "^0.1.1"
+osquery = "^3.0.7"
+pyshark = "^0.6"
+scikit-learn = "^1.5.1"
+openai = "^1.35.10"
+Quart = "^0.19.6"
+celery = "^5.4.0"
+requests = "^2.32.3"
+sendgrid = "^6.11.0"
+pywhatkit = "^5.4"
+python-dotenv = "^1.0.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.2"
+pip-tools = "^7.4.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
